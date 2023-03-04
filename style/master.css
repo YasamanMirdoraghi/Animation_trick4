@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fruktur', cursive;
+}
+.yas
+{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-image: linear-gradient(54deg, rgb(17, 17, 85), rgb(83, 11, 83), rgb(12, 11, 11));
+}
+.sam
+{
+	position: absolute;
+	top: 0;
+	animation: sam1 13s ease-in-out infinite;
+}
+@keyframes sam1
+{
+	0%,100%
+
+	{
+		transform: translateY(-550px);
+       
+	}
+	50% 
+
+	{
+		transform: translateY(0px);
+	}
+}
+.pars
+{
+	position: absolute;
+	top: 100px;
+	right: 200px;
+	animation: animate 8s ease-in-out infinite;
+}
+.nazi
+{
+	position: absolute;
+	bottom: 20px;
+	left: 50px;
+	scale: 0.5;
+	animation: animate 4s forwards infinite;
+}
+@keyframes animate 
+{
+	0%,100% 
+	{
+		transform: translateY(-90px);
+	}
+	50% 
+	{
+		transform: translateY(90px);
+	}
+}
+.yalda 
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+}
+.yas>h1
+{
+	position: relative;
+    font-size: 12vw;
+    font-weight: 100px;
+	display: flex;
+    color: #5e92a0;
+    text-shadow: none;
+    animation: animatet 10s forwards infinite;
+}
+@keyframes animatet
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+			color: rgba(178, 10, 255, 0.89);
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+			color: #f1d535;
+			text-shadow: 0 0 10px #ffac09,
+										0 0 20px #ffad09,
+										0 0 40px #ffac09,
+										0 0 80px #ffac09,
+										0 0 160px #ac873c;
+    }
+}
